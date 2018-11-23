@@ -91,7 +91,7 @@ void loop() {
       SerialAT.println("AT+CFUN=1");
       delay(4000);
       modem.init();
-      modem.simUnlock("2906");
+      modem.simUnlock("0000");  //code pin de la sim
       delay(7000);
       if (!modem.waitForNetwork()) {
         delay(5000);
